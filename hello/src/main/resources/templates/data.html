@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Data from JSONPlaceholder</title>
+</head>
+<body>
+    <h1>Data from JSONPlaceholder</h1>
+    <ul>
+        <li th:each="item : ${data}">
+            <p th:text="${item}"></p>
+        </li>
+    </ul>
+</body>
+</html>
